@@ -1,0 +1,136 @@
+///////////////////////////////
+Chat Session: Kiran Subbaiah with berryplumis from www.mahiti.org
+19/6/2002
+///////////////////////////////
+BUZZ!!!
+Kiran Subbaiah: are you there cherry?
+
+berryplumis: yes, very much. sorry I missed you in the morning. 
+
+Kiran Subbaiah: do you need some time to finish what you are doing or shall we continue?
+
+berryplumis: If you could spare a minute..... 
+
+Kiran Subbaiah: ok
+
+berryplumis: ok. let's go. 
+
+Kiran Subbaiah: did you check the 'My.zip' and other files?
+
+berryplumis: yes, I did. My.zip had one effect - the screen rolled like a TV screen with bad VHold. 
+
+Kiran Subbaiah: yes if you press alpha keys the effects change
+
+berryplumis: the others were to do with mouse tricks.
+
+Kiran Subbaiah: mouse tricks are the 3rd party progs to include along with runme
+
+Kiran Subbaiah: for My.exe: if you press alpha keys the effects change
+
+berryplumis: oh! I didn't know that!!! say, give me a minute to check it out wil you ??? 
+
+Kiran Subbaiah: ok
+
+berryplumis: I pressed the alt-keys. did you mean alt ? 
+
+berryplumis: which key is the "alpha" key ? 
+
+Kiran Subbaiah: no qwerty etc
+
+Kiran Subbaiah: alphabets
+
+berryplumis: ok. one sec. 
+
+berryplumis: right. quite impressive stuff there. so what do we do with it ? 
+
+Kiran Subbaiah: some of these effects change with the movement of mouse, but we dont need to get that far, just a few brief disturbances once in a while, for rightclick for instance.
+
+berryplumis: ok. do we have the source code to my.exe ? 
+
+Kiran Subbaiah: no, it is a director file.
+
+Kiran Subbaiah: I also have smaller 3rd party progs that can be launched and killed by parent if it is too much to figure out these... I know that these guys worked long on c++ to make this for mac and this is the emulated version for win32
+
+berryplumis: but how do we get to display effects selectively ? 
+
+Kiran Subbaiah: we can use a cycle series
+
+Kiran Subbaiah: effect 1, followed by effect two, and loop at the end
+
+Kiran Subbaiah: or even choose randomly from the list of effects
+
+berryplumis: hmmm.... do these programs have command line parameters to switch on and off these effects ? My problem with the executables is how to tell the program to display a set of effects, and not others. 
+
+Kiran Subbaiah: if each effect is a seperate module then the program activates them in series ... did I get your Question right?
+
+berryplumis: we could run the executable, for example my.exe, and kill it in 'X' seconds. But there is no guarantee about the number of effects that'll be displayed in that time..... the other option is to try and emulate these effects from scratch.... hmmm.. sounds like a bad idea if you ask me  
+
+berryplumis: The question was: my.exe is one module with many effects. do we have control over the _individual_ effects of my.exe ? 
+
+Kiran Subbaiah: but My is too big a file, for this. so we could use others that are just single effect exes, execute 1 wait 1 sec, and then kill it,..
+
+berryplumis: sure, that's an option. do you want me to give it a try and see how it goes ? 
+
+Kiran Subbaiah: we don t have control over it though My always starts with a different effect each time it is launched. I am sure you can emulate a few of these as they look quite understandable if you look for some time
+
+Kiran Subbaiah: ok give it a try
+
+Kiran Subbaiah: the other effects you'll ind in :http://www.geocities.com/kiranaudio/cr_log/desktop_real/ http://www.geocities.com/kiranaudio/cr_log/desktop_illusions/
+
+Kiran Subbaiah: these can be used directly without emulating.
+
+berryplumis: ok. So what I'll do is this. I'll write in a new module to 'exec' these programs. I'll also figure out someway for the user to try out different things like different time slots, and then we'll see what the effect is. This module could be integrated with the code of runme.exe
+
+Kiran Subbaiah: that sounds good
+
+Kiran Subbaiah: did you find out about the wall paper stuff?
+
+berryplumis: one sec. I have a phone call. 
+
+Kiran Subbaiah: take your time
+
+Kiran Subbaiah: if it is late for you we can cotinue tommorw 
+
+berryplumis: no. its not late. I could be on for another 30minutes. 
+
+berryplumis: yes, the wallpaper can be saved safely. 
+
+Kiran Subbaiah: ok did you find out about the wall paper stuff?
+
+Kiran Subbaiah: good, and it can be removed after the program has finished running?
+
+berryplumis: yes. the wallpaper can be set quite easily. Just change a path setting. 
+
+Kiran Subbaiah: good, would it be possible to attach midi sounds to the disturbance effects after they have been finalized?
+
+berryplumis: yes, I'll just have to save it temporarily. The only problem with these kinds of 'write through' effects, is that if there's a power failure of some sort, its going to be a mess. So we'll have to build in extra protection for that - but yes, its doable. I'm not cribbing here - just making sure what you're in for.
+
+berryplumis: hmm.. midi sounds.... I'll have to look that one up. 
+
+Kiran Subbaiah: yes My has some too which are quite effective, but that is just extra
+
+berryplumis: right. do you have anything else in mind ? 
+
+Kiran Subbaiah: ...extra protection for that - but yes, its doable. I'm not cribbing here - just making sure what you're in for.. if you think something needs too much effort and is not worthit we can find simpler ways of doing it.
+
+Kiran Subbaiah: no that's it for now. let me know when you want to chat next with a notice well in advance.
+
+berryplumis: no. lets give it a try. 
+
+Kiran Subbaiah: remember that you are free to modify storyboard if you find better way than suggested
+
+Kiran Subbaiah: great! so bye for now
+
+berryplumis: ok. Let me summarize: Here are the effects you've asked for: a) An effect to drag the desktop with the mouse. b) To change the activation of the 'type' windows with a delay. c) to drag desktop icons with the cursor. d) to set a messed up screenshot as the wallpaper and later restore the original. e) make the 'type' window transparent. f) add midi sounds to the current effects. g) exec other programs. 
+
+Kiran Subbaiah: I'll note these down and send you an email with more precise explanations of the structure
+
+Kiran Subbaiah: but these are the components
+
+Kiran Subbaiah: to be worked on now
+
+berryplumis: great. I'll look forward to your mail. In the meantime, I'll do the following: a) Find whether midi can be done. b) Implement setting the desktop wallpaper. - Integrate safety code later. c) Make the type window transparent. d) Introduce the delay effects. a) and c) are tentative. Consider b) and d) done. 
+
+Kiran Subbaiah: great, so bye!
+
+berryplumis: ttyl Please send a summary.  
